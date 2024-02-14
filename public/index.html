@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="inpFile">
+    <button type="button" id="btnUpload">upload</button>
+    <br>
+    <br>
+        <form action="/extract-text" method="post" enctype="multipart/form-data">
+            <input type="file" name="pdfFile" accept=".pdf">
+            <button type="submit">Upload and Extract Text</button>
+        </form>
+    <script>
+    </script>
+</body>
+</html>
