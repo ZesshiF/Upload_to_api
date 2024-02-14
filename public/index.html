@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PDF Text Extraction</title>
 </head>
 <body>
-    <input type="file" id="inpFile">
-    <button type="button" id="btnUpload">upload</button>
-    <br>
-    <br>
-        <form action="/extract-text" method="post" enctype="multipart/form-data">
-            <input type="file" name="pdfFile" accept=".pdf">
-            <button type="submit">Upload and Extract Text</button>
-        </form>
-    <script>
-    </script>
+    <form action="/extract-text" method="post" enctype="multipart/form-data">
+        <input type="file" name="pdfFile" accept=".pdf">
+        <button type="submit">Upload and Extract Text</button>
+    </form>
+    <div id="resultContainer"></div>
+
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
